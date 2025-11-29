@@ -1,0 +1,258 @@
+.balloon-page {
+    padding: 20px;
+    background: #f5f5f5;
+    min-height: 100vh;
+}
+
+/* Header */
+.balloon-header {
+    margin-bottom: 20px;
+}
+
+.page-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0;
+}
+
+/* List Section */
+.balloon-list-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.list-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0 0 20px 0;
+}
+
+/* Action Buttons */
+.balloon-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.btn-action {
+    padding: 10px 20px;
+    background: #4b5563;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+}
+
+.btn-action:hover {
+    background: #374151;
+}
+
+.btn-search {
+    padding: 10px 20px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+}
+
+.btn-search:hover {
+    background: #2563eb;
+}
+
+.btn-add {
+    padding: 10px 20px;
+    background: #22c55e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+}
+
+.btn-add:hover {
+    background: #16a34a;
+}
+
+.btn-icon {
+    font-size: 16px;
+}
+
+/* Search Container */
+.search-container-balloon {
+    margin-bottom: 20px;
+}
+
+.search-input-balloon {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.search-input-balloon:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+/* Table */
+.balloon-table-container {
+    overflow-x: auto;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+}
+
+.balloon-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 1600px;
+}
+
+.balloon-table thead {
+    background: #f9fafb;
+}
+
+.balloon-table th {
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    color: #4b5563;
+    border-bottom: 2px solid #e5e7eb;
+    font-size: 12px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.balloon-table td {
+    padding: 12px;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 14px;
+    color: #374151;
+    white-space: nowrap;
+}
+
+.balloon-table tbody tr:hover {
+    background: #f9fafb;
+}
+
+.sort-arrow {
+    color: #9ca3af;
+    font-size: 10px;
+    margin-left: 4px;
+}
+
+.btn-entry-unconfirm {
+    padding: 4px 12px;
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.btn-entry-unconfirm:hover {
+    background: #dc2626;
+}
+
+.entry-confirm {
+    color: #059669;
+    font-weight: 500;
+}
+
+.total-price-cell {
+    font-weight: 600;
+    color: #059669;
+}
+
+.actions-cell {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.btn-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    transition: transform 0.2s;
+}
+
+.btn-icon:hover {
+    transform: scale(1.2);
+}
+
+.btn-edit {
+    color: #3b82f6;
+}
+
+.btn-delete {
+    color: #ef4444;
+}
+
+.no-data {
+    text-align: center;
+    padding: 40px;
+    color: #9ca3af;
+    font-style: italic;
+}
+
+.loading-message {
+    text-align: center;
+    padding: 40px;
+    color: #6b7280;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.alert-error {
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .balloon-actions {
+        flex-direction: column;
+    }
+
+    .btn-action,
+    .btn-search,
+    .btn-add {
+        width: 100%;
+        justify-content: center;
+    }
+}
+

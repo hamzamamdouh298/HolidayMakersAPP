@@ -1,0 +1,351 @@
+.modal-overlay-package {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.modal-content-package {
+    background: white;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    margin: auto;
+}
+
+.modal-header-package {
+    padding: 20px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 10;
+}
+
+.modal-title-package {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0;
+}
+
+.modal-close-package {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #6b7280;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.modal-close-package:hover {
+    background: #f3f4f6;
+    color: #1f2937;
+}
+
+.modal-body-package {
+    padding: 20px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.form-section-package {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.form-section-package:last-child {
+    border-bottom: none;
+}
+
+.form-row-package {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+    margin-bottom: 15px;
+}
+
+.form-group-package {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-group-package.full-width {
+    flex: 1 1 100%;
+}
+
+.form-group-package label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+.form-group-package input,
+.form-group-package select,
+.form-group-package textarea {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.form-group-package input:focus,
+.form-group-package select:focus,
+.form-group-package textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+.form-group-package textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.input-with-button {
+    display: flex;
+    gap: 5px;
+}
+
+.input-with-button input {
+    flex: 1;
+}
+
+.calc-btn {
+    padding: 10px 15px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.days-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.days-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #374151;
+    cursor: pointer;
+}
+
+.calendar-icon {
+    font-size: 16px;
+}
+
+.expand-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #6b7280;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.section-title-package {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0 0 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.section-icon {
+    font-size: 20px;
+}
+
+.services-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.service-add-btn {
+    padding: 8px 16px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.service-add-btn:hover {
+    background: #2563eb;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.service-item {
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.service-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    background: #f9fafb;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.service-header:hover {
+    background: #f3f4f6;
+}
+
+.service-icon {
+    font-size: 18px;
+}
+
+.service-name {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+}
+
+.service-count {
+    background: #3b82f6;
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.service-arrow {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.price-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.error-message-package {
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 1px solid #fecaca;
+}
+
+.modal-footer-package {
+    padding: 20px;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    position: sticky;
+    bottom: 0;
+    background: white;
+    z-index: 10;
+}
+
+.btn-close-package,
+.btn-add-package {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+}
+
+.btn-close-package {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.btn-close-package:hover {
+    background: #d1d5db;
+}
+
+.btn-add-package {
+    background: #3b82f6;
+    color: white;
+}
+
+.btn-add-package:hover:not(:disabled) {
+    background: #2563eb;
+}
+
+.btn-add-package:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .modal-content-package {
+        max-width: 100%;
+        max-height: 100vh;
+        border-radius: 0;
+    }
+
+    .form-row-package {
+        flex-direction: column;
+    }
+
+    .price-details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-buttons {
+        flex-direction: column;
+    }
+}
+
